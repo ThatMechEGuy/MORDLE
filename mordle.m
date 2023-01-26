@@ -1,3 +1,12 @@
+%{
+• Reveal letters one by one
+• Dark mode
+• No AppDesigner, create uifigure through code
+• Keyboard buttons should be able to have "quadrants" of color for immitating "Qourdle"
+    ○ Implement in a general way to support an arbitrary grid size
+• Each MORDLE game takes a grid as an input, automatically creates sub-grids for axes and controls.
+%}
+
 classdef mordle < handle
     %% Proeprties
     properties (SetAccess = immutable)
@@ -57,40 +66,6 @@ classdef mordle < handle
 
             obj.newGame;
 
-%             obj.letterBoxes(1,1).letter = 'H';
-%             obj.letterBoxes(1,2).letter = 'E';
-%             obj.letterBoxes(1,3).letter = 'L';
-%             obj.letterBoxes(1,4).letter = 'L';
-%             obj.letterBoxes(1,5).letter = 'O';
-%             obj.letterBoxes(2,1).letter = 'W';
-%             obj.letterBoxes(2,2).letter = 'O';
-%             obj.letterBoxes(2,3).letter = 'R';
-%             obj.letterBoxes(2,4).letter = 'L';
-%             obj.letterBoxes(2,5).letter = 'D';
-% 
-%             obj.letterBoxes(1,1).fillColor = Colors.notInWord;
-%             obj.letterBoxes(1,2).fillColor = Colors.notInWord;
-%             obj.letterBoxes(1,3).fillColor = Colors.notInWord;
-%             obj.letterBoxes(1,4).fillColor = Colors.correctSpot;
-%             obj.letterBoxes(1,5).fillColor = Colors.wrongSpot;
-%             obj.letterBoxes(2,1).fillColor = Colors.notInWord;
-%             obj.letterBoxes(2,2).fillColor = Colors.correctSpot;
-%             obj.letterBoxes(2,3).fillColor = Colors.notInWord;
-%             obj.letterBoxes(2,4).fillColor = Colors.correctSpot;
-%             obj.letterBoxes(2,5).fillColor = Colors.notInWord;
-% 
-%             obj.letterBoxes(1,1).fontColor = Colors.fontLight;
-%             obj.letterBoxes(1,2).fontColor = Colors.fontLight;
-%             obj.letterBoxes(1,3).fontColor = Colors.fontLight;
-%             obj.letterBoxes(1,4).fontColor = Colors.fontLight;
-%             obj.letterBoxes(1,5).fontColor = Colors.fontLight;
-%             obj.letterBoxes(2,1).fontColor = Colors.fontLight;
-%             obj.letterBoxes(2,2).fontColor = Colors.fontLight;
-%             obj.letterBoxes(2,3).fontColor = Colors.fontLight;
-%             obj.letterBoxes(2,4).fontColor = Colors.fontLight;
-%             obj.letterBoxes(2,5).fontColor = Colors.fontLight;
-
-%             obj.wordIsGuessed([1,2]) = true;
         end
     end
 
